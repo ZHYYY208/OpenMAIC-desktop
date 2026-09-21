@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OpenMAIC</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+        background: #0f0b1a;
+        color: #e9e3ff;
+      }
+      .wrap {
+        text-align: center;
+      }
+      .dot {
+        width: 44px;
+        height: 44px;
+        margin: 0 auto 18px;
+        border-radius: 50%;
+        border: 3px solid #722ed1;
+        border-top-color: transparent;
+        animation: spin 0.9s linear infinite;
+      }
+      h1 {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0 0 6px;
+      }
+      p {
+        font-size: 13px;
+        opacity: 0.7;
+        margin: 0;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="dot"></div>
+      <h1>OpenMAIC</h1>
+      <p id="msg">正在启动本地服务…</p>
+    </div>
+    <script>
+      setTimeout(function () {
+        var el = document.getElementById("msg");
+        if (el) el.textContent = "首次启动需要几秒钟，请稍候…";
+      }, 8000);
+    </script>
+  </body>
+</html>
