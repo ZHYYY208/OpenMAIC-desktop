@@ -1,6 +1,6 @@
 [package]
 name = "openmaic-desktop"
-version = "1.0.3"
+version = "1.0.4"
 description = "OpenMAIC Windows desktop client"
 authors = ["OpenMAIC"]
 edition = "2021"
