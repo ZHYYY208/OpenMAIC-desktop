@@ -1,7 +1,7 @@
 {
   "name": "openmaic-desktop",
   "private": true,
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "OpenMAIC Windows desktop client (Tauri shell around the Next.js standalone server)",
   "scripts": {
     "tauri": "tauri",
